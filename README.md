@@ -21,7 +21,7 @@ templates{
   }
 
   movies { TODO
-    we need a templagte for movies
+    we need a template for movies
   }
 }
 

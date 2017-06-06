@@ -1,0 +1,16 @@
+
+{{> header}}
+
+{{#if multipletwit}} 
+    <main class="twit-container">
+        {{#each twit}}
+          {{> twit}}
+        {{/each}}
+    </main>
+    {{> createTwitModal}}
+
+{{else}}
+    <main class="twit-container">
+      {{> twit}}
+    </main>
+{{/if}}

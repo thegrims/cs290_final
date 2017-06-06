@@ -5,7 +5,7 @@ var path = require('path');
 var fs = require('fs');
 var express = require('express');
 var exphbs = require('express-handlebars');
-var twitsData = require('./twitData');
+var movieData = require('./movieData');
 var app = express();
 var port = process.env.PORT || 3000;
 
@@ -15,24 +15,24 @@ app.set('view engine', 'handlebars');
 app.get('/', function (req, res, next) {
 
   var templateArgs = {
-    // FIXME: render args from home page
+    movie: movieData
   };
 
-  res.render('twitPage', templateArgs);
+  res.render('mainPage', templateArgs);
 
 });
 
-app.get('/twits/:index', function (req, res, next) {
+app.get('/movies/:index', function (req, res, next) {
   console.log("== url params for request:", req.params.index);
   var index = req.params.index;
-  var twitData = twitsData[index];// FIXME: this will need to change as index will be the movie name
-  console.log(twitData);
+  var movieData = sData[index];// FIXME: this will need to change as index will be the movie name
+  console.log(movieData);
 
-  if (twitData) {
+  if (movieData) {
     var templateArgs = {
       // FIXME: render args for single page
     }
-    res.render('twitPage', templateArgs);
+    res.render('moviePage', templateArgs);
   }
   else {
     next();
