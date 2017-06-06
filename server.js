@@ -15,7 +15,7 @@ app.set('view engine', 'handlebars');
 app.get('/', function (req, res, next) {
 
   var templateArgs = {
-    // FIXME: render args from home page
+    movie: movieData
   };
 
   res.render('mainPage', templateArgs);
