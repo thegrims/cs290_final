@@ -2,6 +2,13 @@
   "movie": {
     "name": "Return of the jedi",
     "mp4": "/derp.mp4",
+    "year": "1952",
+    "photos": [
+      {
+        "caption": "Luke ready to fight.",
+        "url": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      }
+    ],
     "comments": [
       {
         "author": "BobMcGee",
@@ -16,6 +23,13 @@
   "movie": {
     "name": "Return of the derp",
     "mp4": "/derp.mp4",
+    "year": "1925",
+    "photos": [
+      {
+        "caption": "Luke ready to fight.",
+        "url": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      }
+    ],
     "comments": [
       {
         "author": "Derp",
